@@ -1,0 +1,6 @@
+title:    BWA using Pacbio settings
+author:   nickloman
+input:    fasta
+requires: bwa
+version:  0.7.10-r789
+

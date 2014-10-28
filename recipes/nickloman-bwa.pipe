@@ -1,0 +1,18 @@
+
+REFERENCE="input/refs/NC_000913.fna"
+
+index_reference = {
+   exec "bwa index $REFERENCE"
+}
+
+align = {
+   exec "bwa mem -t $THREADS $REFERENCE $input > $output"
+}
+
+sort = {
+   exec "samtools view -bS $input | samtools sort -@ $THREADS - $output.bam.prefix"
+}
+
+entrypoint = segment {
+   index_reference + align + sort
+}

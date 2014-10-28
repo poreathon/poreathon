@@ -1,0 +1,38 @@
+
+####################################################################################################
+# Starting pipeline at Sun Oct 26 14:53:22 GMT 2014
+# Input files:  ../output/nickloman-bwa/Ecoli_R73_2D.sort.bam
+# Output Log:  .bpipe/logs/6763.log
+# Stage histo
+genomeCoverageBed -ibam ../output/nickloman-bwa/Ecoli_R73_2D.sort.bam | grep ^genome > ../output/nickloman-bwa/Ecoli_R73_2D.sort.bam.cov.txt
+
+
+####################################################################################################
+# Starting pipeline at Sun Oct 26 15:03:51 GMT 2014
+# Input files:  ../output/nickloman-bwa/Ecoli_R73_2D.sort.bam
+# Output Log:  .bpipe/logs/6846.log
+# Stage histo
+genomeCoverageBed -ibam ../output/nickloman-bwa/Ecoli_R73_2D.sort.bam | grep ^genome > ../output/nickloman-bwa/Ecoli_R73_2D.sort.bam.cov.txt
+# Stage draw_histo
+Rscript cov_histogram.R ../output/nickloman-bwa/Ecoli_R73_2D.sort.bam.cov.txt Ecoli_R73_2D.sort.bam.draw_histo
+
+
+####################################################################################################
+# Starting pipeline at Sun Oct 26 15:04:37 GMT 2014
+# Input files:  ../output/nickloman-bwa/Ecoli_R73_2D.sort.bam
+# Output Log:  .bpipe/logs/6912.log
+# Stage histo
+genomeCoverageBed -ibam ../output/nickloman-bwa/Ecoli_R73_2D.sort.bam | grep ^genome > ../output/nickloman-bwa/Ecoli_R73_2D.sort.bam.cov.txt
+# Stage draw_histo
+Rscript cov_histogram.R ../output/nickloman-bwa/Ecoli_R73_2D.sort.bam.cov.txt Ecoli_R73_2D.sort.bam.draw_histo
+
+
+####################################################################################################
+# Starting pipeline at Sun Oct 26 15:05:11 GMT 2014
+# Input files:  ../output/nickloman-bwa/Ecoli_R73_2D.sort.bam
+# Output Log:  .bpipe/logs/6971.log
+# Stage histo
+genomeCoverageBed -ibam ../output/nickloman-bwa/Ecoli_R73_2D.sort.bam | grep ^genome > ../output/nickloman-bwa/Ecoli_R73_2D.sort.bam.cov.txt
+# Stage draw_histo
+Rscript cov_histogram.R ../output/nickloman-bwa/Ecoli_R73_2D.sort.bam.cov.txt Ecoli_R73_2D.sort.draw_histo.png
+

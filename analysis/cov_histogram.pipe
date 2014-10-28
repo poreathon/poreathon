@@ -1,0 +1,12 @@
+
+histo = {
+   exec "genomeCoverageBed -ibam $input.bam | grep ^genome > ${input}.cov.txt"
+}
+
+draw_histo = {
+   exec "cov_histogram.R ${input}.cov.txt $output.png"
+} 
+
+cov_histogram = segment {
+   histo + draw_histo
+}

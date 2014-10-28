@@ -1,0 +1,22 @@
+
+REFERENCE="input/refs/NC_000913.fna"
+
+index_reference = {
+   exec "lastdb genome $REFERENCE"
+}
+
+align = {
+   exec "lastal -q 2 -a 1 -b 1 genome $input > $output"
+}
+
+convert_sort = {
+   exec """
+	maf-convert.py sam $input |
+        samtools view -T $REFERENCE -bS - |
+        samtools sort -@ $THREADS - $output.bam.prefix
+	"""
+}
+
+entrypoint = segment {
+   index_reference + align + convert_sort
+}
