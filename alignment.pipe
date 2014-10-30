@@ -1,7 +1,0 @@
-load ENTRYPOINT
-
-load "analysis/cov_histogram.pipe"
-
-Bpipe.run {
-      entrypoint + cov_histogram
-} 

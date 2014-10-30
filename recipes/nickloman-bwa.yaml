@@ -1,4 +1,5 @@
 title:    BWA using default settings
+type:     alignment
 input:    fastq
 author:   nickloman
 requires: bwa

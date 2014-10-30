@@ -1,0 +1,4 @@
+-p THREADS=16
+-p ILLUMINAPE1=/mnt/miseqvm/141024_D00255_0105_AHAWGEADXX/Data/Intensities/BaseCalls/2035_S28_L001_R1_001.fastq.gz
+-p ILLUMINAPE2=/mnt/miseqvm/141024_D00255_0105_AHAWGEADXX/Data/Intensities/BaseCalls/2035_S28_L001_R2_001.fastq.gz
+-p REFERENCE=input/refs/NC_000913.fna

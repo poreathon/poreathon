@@ -1,0 +1,9 @@
+bpipe run -r -f nickloman-spades_Ecoli_2D_all.html -d output/assembly/nickloman-spades -p ENTRYPOINT=recipes/nickloman-spades.pipe @params.txt pipelines/assembly.pipe input/nanopore/Ecoli_2D_all.fasta
+bpipe run -r -f nickloman-last-q2_Ecoli_R7_2D.html -d output/alignment/nickloman-last-q2 -p ENTRYPOINT=recipes/nickloman-last-q2.pipe @params.txt pipelines/alignment.pipe input/nanopore/Ecoli_R7_2D.fasta
+bpipe run -r -f nickloman-bwa-pacbio_Ecoli_R7_2D.html -d output/alignment/nickloman-bwa-pacbio -p ENTRYPOINT=recipes/nickloman-bwa-pacbio.pipe @params.txt pipelines/alignment.pipe input/nanopore/Ecoli_R7_2D.fasta
+bpipe run -r -f nickloman-last-q1_Ecoli_R7_2D.html -d output/alignment/nickloman-last-q1 -p ENTRYPOINT=recipes/nickloman-last-q1.pipe @params.txt pipelines/alignment.pipe input/nanopore/Ecoli_R7_2D.fasta
+bpipe run -r -f nickloman-bwa_Ecoli_R7_2D.html -d output/alignment/nickloman-bwa -p ENTRYPOINT=recipes/nickloman-bwa.pipe @params.txt pipelines/alignment.pipe input/nanopore/Ecoli_R7_2D.fastq
+bpipe run -r -f nickloman-last-q2_Ecoli_R73_2D.html -d output/alignment/nickloman-last-q2 -p ENTRYPOINT=recipes/nickloman-last-q2.pipe @params.txt pipelines/alignment.pipe input/nanopore/Ecoli_R73_2D.fasta
+bpipe run -r -f nickloman-bwa-pacbio_Ecoli_R73_2D.html -d output/alignment/nickloman-bwa-pacbio -p ENTRYPOINT=recipes/nickloman-bwa-pacbio.pipe @params.txt pipelines/alignment.pipe input/nanopore/Ecoli_R73_2D.fasta
+bpipe run -r -f nickloman-last-q1_Ecoli_R73_2D.html -d output/alignment/nickloman-last-q1 -p ENTRYPOINT=recipes/nickloman-last-q1.pipe @params.txt pipelines/alignment.pipe input/nanopore/Ecoli_R73_2D.fasta
+bpipe run -r -f nickloman-bwa_Ecoli_R73_2D.html -d output/alignment/nickloman-bwa -p ENTRYPOINT=recipes/nickloman-bwa.pipe @params.txt pipelines/alignment.pipe input/nanopore/Ecoli_R73_2D.fastq

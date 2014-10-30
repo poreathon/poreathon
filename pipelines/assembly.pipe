@@ -1,0 +1,9 @@
+load ENTRYPOINT
+
+quast = {
+
+}
+
+Bpipe.run {
+      entrypoint + quast
+} 

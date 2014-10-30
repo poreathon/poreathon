@@ -1,0 +1,7 @@
+load ENTRYPOINT
+
+load "../analysis/cov_histogram.pipe"
+
+Bpipe.run {
+      entrypoint + run_cov_histogram
+} 

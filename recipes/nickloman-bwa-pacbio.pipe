@@ -1,12 +1,11 @@
 
-REFERENCE="input/refs/NC_000913.fna"
-
 index_reference = {
    exec "bwa index $REFERENCE"
+   forward input
 }
 
 align = {
-   exec "bwa mem -t $THREADS -x pacbio $REFERENCE $input > $output"
+   exec "bwa mem -t $THREADS -x pacbio $REFERENCE $input > $output.sam"
 }
 
 sort = {

@@ -7,6 +7,6 @@ draw_histo = {
    exec "cov_histogram.R ${input}.cov.txt $output.png"
 } 
 
-cov_histogram = segment {
+run_cov_histogram = segment {
    histo + draw_histo
 }

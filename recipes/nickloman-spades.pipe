@@ -1,0 +1,8 @@
+
+run_spades = {
+   exec "spades.py --pe1-1 $ILLUMINAPE1 --pe1-2 $ILLUMINAPE2 --pacbio $input -t $THREADS -o $output.dir"
+}
+
+entrypoint = segment {
+   run_spades
+}

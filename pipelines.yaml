@@ -1,0 +1,6 @@
+assembly:
+- Ecoli_2D_all
+
+alignment:
+- Ecoli_R7_2D
+- Ecoli_R73_2D

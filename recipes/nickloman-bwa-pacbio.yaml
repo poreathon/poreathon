@@ -1,4 +1,5 @@
 title:    BWA using Pacbio settings
+type:     alignment
 author:   nickloman
 input:    fasta
 requires: bwa

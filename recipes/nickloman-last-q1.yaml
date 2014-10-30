@@ -1,8 +1,8 @@
-title:    LAST with -q2
+title:    LAST with -q1
 type:     alignment
 author:   nickloman
 input:    fasta
-requires: bwa
-version:  0.7.10-r789
+requires: last
+version:  490
 url:      http://last.cbrc.jp/last-490.zip
 
