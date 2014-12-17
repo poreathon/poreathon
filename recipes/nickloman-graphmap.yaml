@@ -1,0 +1,8 @@
+title:    Graphmap
+type:     alignment
+input:    fasta
+author:   nickloman
+requires: graphmap
+version:  v18
+url:      https://github.com/isovic/graphmap
+

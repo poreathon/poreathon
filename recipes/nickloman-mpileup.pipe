@@ -1,0 +1,8 @@
+
+mpileup = {
+   exec "samtools mpileup -Q 0 -B -g -f $REFERENCE $input | bcftools call -c - > $output.vcf"
+}
+
+entrypoint = segment {
+   mpileup
+}

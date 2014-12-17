@@ -1,11 +1,11 @@
 
 index_reference = {
-   exec "bwa index $REFERENCE"
+   exec "bwa-0.7.10-r789 index $REFERENCE"
    forward input
 }
 
 align = {
-   exec "bwa mem -t $THREADS -x pacbio $REFERENCE $input > $output.sam"
+   exec "bwa-0.7.10-r789 mem -t $THREADS -x pacbio $REFERENCE $input > $output.sam"
 }
 
 sort = {

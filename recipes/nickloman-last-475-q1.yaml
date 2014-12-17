@@ -1,0 +1,8 @@
+title:    LAST (v475) with -q1
+type:     alignment
+author:   nickloman
+input:    fasta
+requires: last
+version:  475
+url:      http://last.cbrc.jp/last-475.zip
+

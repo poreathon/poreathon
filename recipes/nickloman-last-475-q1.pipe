@@ -1,0 +1,22 @@
+
+index_reference = {
+   exec "lastdb-475 $output.lastindex $REFERENCE && touch $output.lastindex"
+   forward input
+}
+
+align = {
+   exec "lastal-475 -q 1 -a 1 -b 1 $input.lastindex $input > $output.maf"
+}
+
+convert = {
+   exec """
+	maf-convert sam $input |
+        samtools view -T $REFERENCE -bS - |
+        samtools sort -@ $THREADS - $output.bam.prefix
+	"""
+}
+
+entrypoint = segment {
+   index_reference + align + convert
+}
+

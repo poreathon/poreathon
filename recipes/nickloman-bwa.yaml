@@ -1,6 +1,6 @@
 title:    BWA using default settings
 type:     alignment
-input:    fastq
+input:    fasta
 author:   nickloman
 requires: bwa
 version:  0.7.10-r789

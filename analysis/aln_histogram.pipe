@@ -1,0 +1,12 @@
+
+count_errors = {
+   exec "count-errors.py $input.bam > $output.errors.txt"
+}
+
+draw_alignment_length_histogram = {
+   exec "aln_histogram.R $input $output.png"
+} 
+
+run_alignment_length_histogram = segment {
+   count_errors + draw_alignment_length_histogram
+}

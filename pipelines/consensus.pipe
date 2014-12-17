@@ -1,0 +1,5 @@
+load ENTRYPOINT
+
+Bpipe.run {
+      entrypoint
+} 

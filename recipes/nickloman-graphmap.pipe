@@ -1,0 +1,12 @@
+
+align = {
+   exec "graphmap-v0.18 -r $REFERENCE -t $THREADS -d $input -o $output.sam"
+}
+
+sort = {
+   exec "samtools view -bS $input | samtools sort -@ $THREADS - $output.bam.prefix"
+}
+
+entrypoint = segment {
+   align + sort
+}
